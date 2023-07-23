@@ -9,7 +9,7 @@ const numberOfWords = function(){
 
 // Number of Characters
 const numberCharacters = function(){
-
+  
 }
 
 // Number of Numerals
@@ -19,7 +19,8 @@ const numberNumerals = function(){
 
 // Length of the String
 const stringLength = function(){
-
+    //Place Holder:
+    console.log(textToParse.length);
 }
 
 
