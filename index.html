@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Analyzer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js" defer></script>
     <script src="text-analysis.js" defer></script>
+    
 </head>
 <body>
     <form>
-        <textarea id="to-parse" name="input" rows="10" cols="30"></textarea>
+        <textarea id="to-parse" name="input" rows="30" cols="60" style="overflow:auto;">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit malesuada, libero auctor enim mauris cras habitant posuere hendrerit, eget ultrices urna nascetur pharetra nisi natoque. Vehicula himenaeos nisi ullamcorper in egestas arcu justo nunc duis, ante mattis mi feugiat litora fermentum est mauris sociis, nascetur sapien felis eu cum mus facilisis cubilia. Parturient augue nisi taciti eget suscipit iaculis sem, pulvinar purus hendrerit fringilla dignissim urna nascetur, suspendisse ultricies mollis ultrices luctus tempor. Habitasse leo lectus donec aenean felis convallis sem, risus sociis commodo mi ut bibendum primis, ac dictumst cum potenti quis litora.
+        </textarea>
     </form>
+    <button id="myBtn">Parse Text</button>
+    <div><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div>
 </body>
 </html>
