@@ -4,7 +4,7 @@ const logContent = function(){
 
 // Word Count
 const numberOfWords = function(){
-
+    
 }
 
 // Number of Characters
