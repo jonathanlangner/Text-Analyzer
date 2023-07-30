@@ -1,4 +1,12 @@
+const SEARCH_BTN = document.querySelector("#search-btn").addEventListener("click", simpleSearch);
+let textSEARCH = document.querySelector("#search-box").value;
+let textToParse = document.querySelector("#to-parse").value;
+const parseTextBtn = document.querySelector("#myBtn").addEventListener("click", logContent); 
+
+
+
 const logContent = function(){
+    textToParse = document.querySelector("#to-parse").value;
     console.log(textToParse);
     console.log(numberOfWords());
     console.log(numberCharacters());
@@ -8,7 +16,12 @@ const logContent = function(){
 
 //? Search Functions
 
-
+const simpleSearch = function(){
+    textSEARCH = document.querySelector("#search-box").value;
+    console.log(textSEARCH);
+    console.log(textToParse.search(textSEARCH));
+    // return textToParse.search(SEARCH);
+}
 
 //? General Statistics: 
 
@@ -114,7 +127,3 @@ const caesarDecode = function(){
     
 }
 
-
-const textToParse = document.querySelector("#to-parse").value;
-const parseTextBtn = document.querySelector("#myBtn").addEventListener("click", logContent); 
-console.log(textToParse);
