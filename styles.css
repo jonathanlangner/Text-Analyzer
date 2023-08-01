@@ -1,0 +1,12 @@
+.text-analyzer-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+   
+}
+
+.tool {
+    width: 100%;
+    text-align: center;
+}

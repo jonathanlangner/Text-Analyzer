@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"
       defer
@@ -11,44 +12,58 @@
     <script src="text-analysis.js" defer></script>
   </head>
   <body>
-    <form>
-      <textarea
-        id="to-parse"
-        name="input"
-        rows="30"
-        cols="60"
-        style="overflow: auto"
-      >Lorem ipsum dolor sit amet consectetur</textarea
-      >
-    </form>
-    <button id="myBtn">Test</button>
-    <h3>Search</h3>
-    <form>
-      <textarea
-        id="search-box"
-        name="input"
-        rows="1"
-        cols="20"
-        style="overflow: auto"
-      ></textarea>
-    </form>
-    <button id="search-btn">Search</button>
-    <h3>Frequency Analysis</h3>
-    <button>Character Frequency Analysis</button>
-    <button>Word Frequency Analysis</button>
-    <h3>Readability Analysis</h3>
-    <button>Readability Analysis</button>
-    <h3>Morse Code</h3>
-    <!--Morse Code-->
-    <button>Encode</button>
-    <button>Decode</button>
-    <h3>Caesar Cipher</h3>
-    <!--Caesar Cipher-->
-    <button>Caesar Encode</button>
-    <button>Caesar Decode</button>
-
-    <div>
-      <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
-    </div>
+    <h1 style="text-align: center;">Text Analyzer</h1>
+    <div class="text-analyzer-container">
+      <div class="tool">  
+      <form>
+          <textarea
+            id="to-parse"
+            name="input"
+            rows="30"
+            cols="60"
+            style="overflow: auto"
+          >Lorem ipsum dolor sit amet consectetur</textarea
+          >
+        </form>
+        <!-- <button id="myBtn">Test</button> -->
+      </div>
+      <div  class="tool">
+        <h3>Search</h3>
+        <form style="display: inline;">
+          <textarea
+            id="search-box"
+            name="input"
+            rows="1"
+            cols="20"
+            style="overflow: auto"
+          ></textarea>
+        </form>
+        <button id="search-btn">Search</button>
+      </div>
+        <div  class="tool">
+          <h3>Frequency Analysis</h3>
+          <button>Character Frequency Analysis</button>
+          <button>Word Frequency Analysis</button>
+          <h3>Readability Analysis</h3>
+          <button>Readability Analysis</button>
+      </div>
+      <div  class="tool">
+        <h3>Morse Code</h3>
+        <!--Morse Code-->
+        <button id="morse-encode">Encode</button>
+        <button id="morse-decode">Decode</button>
+      </div>
+      <div  class="tool">
+        <h3>Caesar Cipher</h3>
+        <!--Caesar Cipher-->
+        <p>Shift Amount:</p>
+        <textarea id="caesar-shift"  rows="1" cols="10">1</textarea>
+        <button id="caesar-encode">Caesar Encode</button>
+        <button id="caesar-decode">Caesar Decode</button>
+      </div>
+        <div class="tool">
+          <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+        </div>
+      </div>
   </body>
 </html>
